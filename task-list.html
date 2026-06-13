@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow - Task List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Task List</h1>
+    <p>View all tasks with due date, priority, and status</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Dashboard</a>
+    <a href="add-task.html">Add Task</a>
+    <a href="task-list.html">Task List</a>
+    <a href="task-detail.html">Task Detail</a>
+    <a href="about.html">About / Help</a>
+  </nav>
+
+  <main class="container">
+    <section class="card">
+      <h2>All Tasks</h2>
+
+      <div class="filters">
+        <button type="button">All</button>
+        <button type="button">Pending</button>
+        <button type="button">Completed</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Due Date</th>
+            <th>Priority</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Prepare DevOps Assignment</td>
+            <td>2026-06-20</td>
+            <td><span class="badge high">High</span></td>
+            <td><span class="badge pending">Pending</span></td>
+          </tr>
+          <tr>
+            <td>Create Dockerfile</td>
+            <td>2026-06-18</td>
+            <td><span class="badge medium">Medium</span></td>
+            <td><span class="badge completed">Completed</span></td>
+          </tr>
+          <tr>
+            <td>Verify Render Deployment</td>
+            <td>2026-06-21</td>
+            <td><span class="badge low">Low</span></td>
+            <td><span class="badge pending">Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>TaskFlow CI/CD Assignment - DevOps Fundamentals Spring 2026</footer>
+</body>
+</html>
