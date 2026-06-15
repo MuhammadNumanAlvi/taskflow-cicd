@@ -258,15 +258,15 @@ document.addEventListener('DOMContentLoaded', function() {
   initializeData();
   
   // Check which page we're on and initialize accordingly
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const pathname = window.location.pathname;
   
-  if (currentPage === 'index.html' || currentPage === '') {
-    updateDashboardStats();
-  } else if (currentPage === 'add-task.html') {
+  if (pathname.includes('add-task.html')) {
     setupAddTaskForm();
-  } else if (currentPage === 'task-list.html') {
+  } else if (pathname.includes('task-list.html')) {
     setupTaskListFilters();
-  } else if (currentPage === 'task-detail.html') {
+  } else if (pathname.includes('task-detail.html')) {
     loadTaskDetail();
+  } else if (pathname.includes('index.html') || pathname === '/' || pathname.endsWith('/')) {
+    updateDashboardStats();
   }
 });
