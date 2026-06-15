@@ -120,8 +120,16 @@ button:hover, .btn:hover {
   background: #c62828;
 }
 
+.btn-danger:hover {
+  background: #8b0000;
+}
+
 .btn-success {
   background: #188038;
+}
+
+.btn-success:hover {
+  background: #0d652d;
 }
 
 .filters {
@@ -129,6 +137,22 @@ button:hover, .btn:hover {
   gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 15px;
+}
+
+.filters button {
+  background: rgba(23, 78, 166, 0.2);
+  color: #174ea6;
+  border: 2px solid #174ea6;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.filters button:hover {
+  background: #174ea6;
+  color: white;
 }
 
 table {
